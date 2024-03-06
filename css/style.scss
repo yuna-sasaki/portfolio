@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+* {
+    font-family: "noto-sans-cjk-jp", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    color: #1F1E1E;
+}
+
+a {
+    text-decoration: none !important;
+    text-decoration-line: none !important;
+    color: #1F1E1E !important;
+}
+
+img {
+    max-width: 100%;
+}
+
+.txt_gray {
+    color: #818181;
+}
+
+.text-left {
+    text-align: left;
+}
+
+#cocktail_menu {
+    margin: 0 auto;
+    padding: 110px 0;
+    text-align: center;
+    background-color: #F1F0E9;
+
+    .menu_ttl {
+        font-size: 60px;
+    }
+
+    .menu_sub_ttl {
+        font-size: 28px;
+    }
+
+    .menu_inner {
+        background-color: #fff;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        border-radius: 31px;
+        width: 75%;
+        margin: 85px auto 0;
+        padding: 75px 50px 100px;
+    }
+
+    .menu_top_txt {
+        font-size: 29px;
+        margin-bottom: 70px;
+        border-bottom: 1px solid #1F1E1E;
+        display: inline-block;
+    }
+
+    .cocktail_wrap {
+        display: flex;
+        flex-basis: 30%;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .cocktail_wrap:hover {
+        transition: .3s;
+        transform: translateY(-4px);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    .cocktail_txt {
+        font-size: 23px;
+    }
+
+    .cocktail_img {
+        width: 23%;
+    }
+
+    .cocktail_img.mojito {
+        width: 33%;
+    }
+
+    .cocktail_img.margatita {
+        width: 31%;
+    }
+
+    .cocktail_img.blueLagoon {
+        width: 27%;
+    }
+
+    .cocktail_img.kirRoyale {
+        width: 16%;
+    }
+
+    .cocktail_img.russianSpringPunch {
+        width: 26%;
+    }
+}
+
+footer {
+    background-color: #3A3A3A;
+    padding: 20px;
+}

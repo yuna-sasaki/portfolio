@@ -1,12 +1,215 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Welcome to my bar</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
-    Hello World!
-    
+    <main>
+        <section id="cocktail_menu">
+            <p class="menu_ttl txt_gray fw-bold">Welcome to my bar</p>
+            <p class="menu_sub_ttl fw-bold">Choose your favorite cocktail</p>
+
+            <div class="menu_inner">
+                <p class="menu_top_txt">Cocktail Menu</p>
+                <div>
+                    <!-- Menu1 -->
+                    <div class="d-flex text-left justify-content-around">
+
+                        <!-- ピニャコラーダ -->
+                        <a href="" class="cocktail_wrap">
+                            <div class="d-flex align-items-center justify-content-around">
+                                <img src="img/cocktail/PinaColada.png" class="cocktail_img" alt="">
+                                <div>
+                                    <p class="cocktail_txt fw-bold mb-0">Pina Colada</p>
+                                    <p class="small">(ピニャコラーダ)</p>
+
+                                    <p>rum<br>
+                                        pineapple juice<br>
+                                        coconut milk<br>
+                                        crash ice<br>
+                                        pineapple</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- ピニャコラーダ -->
+
+                        <!-- モヒート -->
+                        <a href="" class="cocktail_wrap">
+                            <div class="d-flex align-items-center justify-content-around">
+                                <img src="img/cocktail/Mojito.png" class="cocktail_img mojito" alt="">
+                                <div>
+                                    <p class="cocktail_txt fw-bold mb-0">Mojito</p>
+                                    <p class="small">(モヒート)</p>
+
+                                    <p>rum<br>
+                                        lime juice<br>
+                                        brown sugar<br>
+                                        soda<br>
+                                        mint</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- モヒート -->
+
+                        <!-- エスプレッソ マティーニ -->
+                        <a href="" class="cocktail_wrap">
+                            <div class="d-flex align-items-center justify-content-around">
+                                <img src="img/cocktail/EspressoMartini.png" class="cocktail_img" alt="">
+                                <div>
+                                    <p class="cocktail_txt fw-bold mb-0">Espresso Martini</p>
+                                    <p class="small">(エスプレッソ マティーニ)</p>
+
+                                    <p>vodka<br>
+                                        cacao liqueur<br>
+                                        coffee liqueur<br>
+                                        espresso<br>
+                                        cacao beans</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- エスプレッソ マティーニ -->
+
+
+                    </div>
+
+                    <!-- Menu2 -->
+                    <div class="d-flex text-left justify-content-around mt-4">
+
+                        <!-- マルガリータ -->
+                        <a href="" class="cocktail_wrap">
+                            <div class="d-flex align-items-center justify-content-around">
+                                <img src="img/cocktail/Margatita.png" class="cocktail_img margatita" alt="">
+                                <div>
+                                    <p class="cocktail_txt fw-bold mb-0">Margatita</p>
+                                    <p class="small">(マルガリータ)</p>
+
+                                    <p>tequila<br>
+                                        cointreau<br>
+                                        lime<br>
+                                        salt</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- マルガリータ -->
+
+                        <!-- テキーラサンライズ -->
+                        <a href="" class="cocktail_wrap">
+                            <div class="d-flex align-items-center justify-content-around">
+                                <img src="img/cocktail/TequlaSunrise.png" class="cocktail_img" alt="">
+                                <div>
+                                    <p class="cocktail_txt fw-bold mb-0">Tequla Sunrise</p>
+                                    <p class="small">(テキーラサンライズ)</p>
+
+                                    <p>tequila<br>
+                                        orange juice<br>
+                                        grenadine syrup<br>
+                                        oranget</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- テキーラサンライズ -->
+
+                        <!-- ブルーラグーン -->
+                        <a href="" class="cocktail_wrap">
+                            <div class="d-flex align-items-center justify-content-around">
+                                <img src="img/cocktail/BlueLagoon2.png" class="cocktail_img blueLagoon" alt="">
+                                <div>
+                                    <p class="cocktail_txt fw-bold mb-0">Blue Lagoon</p>
+                                    <p class="small">(ブルーラグーン)</p>
+
+                                    <p>vodka<br>
+                                        blue curacao<br>
+                                        lemon juice<br>
+                                        orange slice<br>
+                                        cherry</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- ブルーラグーン -->
+
+
+                    </div>
+
+                    <!-- Menu3 -->
+                    <div class="d-flex text-left justify-content-around mt-4">
+
+                        <!-- ブラッディマリー -->
+                        <a href="" class="cocktail_wrap">
+                            <div class="d-flex align-items-center justify-content-around">
+                                <img src="img/cocktail/BloodyMary.png" class="cocktail_img" alt="">
+                                <div>
+                                    <p class="cocktail_txt fw-bold mb-0">Bloody Mary</p>
+                                    <p class="small">(ブラッディマリー)</p>
+
+                                    <p>vodka<br>
+                                        tomato juice<br>
+                                        lemon juice<br>
+                                        Worcestershire sauce<br>
+                                        celery salt</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- ブラッディマリー -->
+
+                        <!-- キールロワイヤル -->
+                        <a href="" class="cocktail_wrap">
+                            <div class="d-flex align-items-center justify-content-around">
+                                <img src="img/cocktail/KirRoyale.png" class="cocktail_img kirRoyale" alt="">
+                                <div>
+                                    <p class="cocktail_txt fw-bold mb-0">KirRoyale</p>
+                                    <p class="small">(キールロワイヤル)</p>
+
+                                    <p>rouget creme<br>
+                                        de cassis<br>
+                                        champagne</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- キールロワイヤル -->
+
+                        <!-- ロシアンスプリングパンチ -->
+                        <a href="" class="cocktail_wrap">
+                            <div class="d-flex align-items-center justify-content-around">
+                                <img src="img/cocktail/RussianSpringPunch.png" class="cocktail_img russianSpringPunch me-4" alt="">
+                                <div>
+                                    <p class="cocktail_txt fw-bold mb-0">Russian Spring Punch</p>
+                                    <p class="small">(ロシアンスプリングパンチ)</p>
+
+                                    <p>cassis<br>
+                                        vodka<br>
+                                        sparkling wine<br>
+                                        lemon juice<br>
+                                        sugar syrup</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- ロシアンスプリングパンチ -->
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <p class="text-white fw-bold mb-0 text-center">©YUNA SASAKI</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
