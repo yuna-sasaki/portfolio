@@ -36,16 +36,24 @@ img {
 
 #cocktail_menu {
     margin: 0 auto;
-    padding: 110px 0;
+    padding: 70px 0;
     text-align: center;
     background-color: #F1F0E9;
 
+    @media(max-width: 767px) {
+        padding: 70px 20px;
+    }
+
     .menu_ttl {
-        font-size: 60px;
+        font-size: clamp(29px, 3.55vw, 60px);
     }
 
     .menu_sub_ttl {
         font-size: 28px;
+
+        @media(max-width: 767px) {
+            font-size: 20px;
+        }
     }
 
     .menu_inner {
@@ -53,15 +61,26 @@ img {
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
         border-radius: 31px;
         width: 75%;
-        margin: 85px auto 0;
-        padding: 75px 50px 100px;
+        margin: 55px auto 0;
+        padding: 55px 50px 100px;
+
+        @media(max-width: 767px) {
+            width: 100%;
+            margin: 45px auto 0;
+            padding: 35px 25px;
+        }
     }
 
     .menu_top_txt {
         font-size: 29px;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
         border-bottom: 1px solid #1F1E1E;
         display: inline-block;
+
+        @media(max-width: 767px) {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
     }
 
     .cocktail_wrap {
@@ -69,6 +88,10 @@ img {
         flex-basis: 30%;
         padding: 20px;
         border-radius: 20px;
+
+        @media(max-width: 767px) {
+            padding: 0;
+        }
     }
 
     .cocktail_wrap:hover {
@@ -79,6 +102,16 @@ img {
 
     .cocktail_txt {
         font-size: 23px;
+
+        @media(max-width: 767px) {
+            font-size: 16px
+        }
+    }
+
+    .small {
+        @media(max-width: 767px) {
+            font-size: 12px
+        }
     }
 
     .cocktail_img {
