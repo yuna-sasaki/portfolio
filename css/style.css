@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "noto-sans-cjk-jp", sans-serif;
   box-sizing: border-box;
@@ -37,10 +38,13 @@ img {
   padding: 70px 0;
   text-align: center;
   background-color: #F1F0E9;
+  /*スクロールダウン*/
+  /* 線の描写 */
+  /*高さ・位置・透過が変化して線が上から下に動く*/
 }
-@media (max-width: 767px) {
+@media (max-width: 1100px) {
   #cocktail_menu {
-    padding: 70px 20px;
+    padding: 40px 20px;
   }
 }
 #cocktail_menu .menu_ttl {
@@ -58,15 +62,102 @@ img {
   background-color: #fff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   border-radius: 31px;
-  width: 75%;
+  width: 100%;
+  max-width: 1100px;
   margin: 55px auto 0;
   padding: 55px 50px 100px;
+  position: relative;
 }
 @media (max-width: 767px) {
   #cocktail_menu .menu_inner {
-    width: 100%;
     margin: 45px auto 0;
     padding: 35px 25px;
+  }
+}
+#cocktail_menu .scrolldown1 {
+  /*描画位置※位置は適宜調整してください*/
+  position: absolute;
+  left: 50%;
+  top: -6%;
+  /*全体の高さ*/
+  height: 100px;
+}
+@media (max-width: 767px) {
+  #cocktail_menu .scrolldown1 {
+    height: 70px;
+  }
+}
+#cocktail_menu .scrolldown1::after {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  top: 0;
+  /*線の形状*/
+  width: 1px;
+  height: 70px;
+  background: #707070;
+  /*線の動き1.4秒かけて動く。永遠にループ*/
+  animation: pathmove 1.4s ease-in-out infinite;
+  opacity: 0;
+}
+@media (max-width: 767px) {
+  #cocktail_menu .scrolldown1::after {
+    height: 50px;
+    animation: pathmove_sp 1.4s ease-in-out infinite;
+  }
+}
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 50px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: 100px;
+    opacity: 0;
+  }
+}
+@keyframes pathmove_sp {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 35px;
+    opacity: 1;
+    @media (max-width: 767px) {
+      #cocktail_menu {
+        height: 10px;
+      }
+    }
+  }
+  100% {
+    height: 0;
+    top: 70px;
+    opacity: 0;
+  }
+}
+#cocktail_menu .d-flex {
+  justify-content: space-around;
+}
+@media (max-width: 767px) {
+  #cocktail_menu .d-flex {
+    justify-content: flex-start;
+  }
+}
+#cocktail_menu .cocktail_inner {
+  width: 30%;
+}
+@media (max-width: 767px) {
+  #cocktail_menu .cocktail_inner {
+    width: 45%;
+    margin-right: 5%;
   }
 }
 #cocktail_menu .menu_top_txt {
@@ -75,9 +166,9 @@ img {
   border-bottom: 1px solid #1F1E1E;
   display: inline-block;
 }
-@media (max-width: 767px) {
+@media (max-width: 1100px) {
   #cocktail_menu .menu_top_txt {
-    font-size: 22px;
+    font-size: 19px;
     margin-bottom: 20px;
   }
 }
@@ -89,7 +180,7 @@ img {
 }
 @media (max-width: 767px) {
   #cocktail_menu .cocktail_wrap {
-    padding: 0;
+    padding: 10px 0;
   }
 }
 #cocktail_menu .cocktail_wrap:hover {
@@ -98,7 +189,7 @@ img {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 #cocktail_menu .cocktail_txt {
-  font-size: 23px;
+  font-size: 20px;
 }
 @media (max-width: 767px) {
   #cocktail_menu .cocktail_txt {
@@ -107,29 +198,65 @@ img {
 }
 @media (max-width: 767px) {
   #cocktail_menu .small {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 #cocktail_menu .cocktail_img {
-  width: 23%;
+  width: 59px;
+}
+@media (max-width: 767px) {
+  #cocktail_menu .cocktail_img {
+    width: 23%;
+  }
 }
 #cocktail_menu .cocktail_img.mojito {
-  width: 33%;
+  width: 85px;
+}
+@media (max-width: 767px) {
+  #cocktail_menu .cocktail_img.mojito {
+    width: 33%;
+  }
 }
 #cocktail_menu .cocktail_img.margatita {
-  width: 31%;
+  width: 80px;
+}
+@media (max-width: 767px) {
+  #cocktail_menu .cocktail_img.margatita {
+    width: 31%;
+  }
 }
 #cocktail_menu .cocktail_img.blueLagoon {
-  width: 27%;
+  width: 70px;
+}
+@media (max-width: 767px) {
+  #cocktail_menu .cocktail_img.blueLagoon {
+    width: 27%;
+  }
 }
 #cocktail_menu .cocktail_img.kirRoyale {
-  width: 16%;
+  width: 41px;
+}
+@media (max-width: 767px) {
+  #cocktail_menu .cocktail_img.kirRoyale {
+    width: 16%;
+  }
 }
 #cocktail_menu .cocktail_img.russianSpringPunch {
-  width: 26%;
+  width: 67px;
+}
+@media (max-width: 767px) {
+  #cocktail_menu .cocktail_img.russianSpringPunch {
+    width: 26%;
+  }
 }
 
 footer {
   background-color: #3A3A3A;
   padding: 20px;
+}
+@media (max-width: 767px) {
+  footer {
+    font-size: 13px;
+    padding: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -40,8 +40,8 @@ img {
     text-align: center;
     background-color: #F1F0E9;
 
-    @media(max-width: 767px) {
-        padding: 70px 20px;
+    @media(max-width: 1100px) {
+        padding: 40px 20px;
     }
 
     .menu_ttl {
@@ -60,14 +60,109 @@ img {
         background-color: #fff;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
         border-radius: 31px;
-        width: 75%;
+        width: 100%;
+        max-width: 1100px;
         margin: 55px auto 0;
         padding: 55px 50px 100px;
+        position: relative;
 
         @media(max-width: 767px) {
-            width: 100%;
             margin: 45px auto 0;
             padding: 35px 25px;
+        }
+    }
+
+    /*スクロールダウン*/
+    .scrolldown1 {
+        /*描画位置※位置は適宜調整してください*/
+        position: absolute;
+        left: 50%;
+        top: -6%;
+        /*全体の高さ*/
+        height: 100px;
+
+        @media(max-width: 767px) {
+            height: 70px;
+        }
+    }
+
+    /* 線の描写 */
+    .scrolldown1::after {
+        content: "";
+        /*描画位置*/
+        position: absolute;
+        top: 0;
+        /*線の形状*/
+        width: 1px;
+        height: 70px;
+        background: #707070;
+        /*線の動き1.4秒かけて動く。永遠にループ*/
+        animation: pathmove 1.4s ease-in-out infinite;
+        opacity: 0;
+
+        @media(max-width: 767px) {
+            height: 50px;
+            animation: pathmove_sp 1.4s ease-in-out infinite;
+        }
+    }
+
+    /*高さ・位置・透過が変化して線が上から下に動く*/
+    @keyframes pathmove {
+        0% {
+            height: 0;
+            top: 0;
+            opacity: 0;
+        }
+
+        30% {
+            height: 50px;
+            opacity: 1;
+        }
+
+        100% {
+            height: 0;
+            top: 100px;
+            opacity: 0;
+        }
+    }
+
+    @keyframes pathmove_sp {
+        0% {
+            height: 0;
+            top: 0;
+            opacity: 0;
+        }
+
+        30% {
+            height: 35px;
+            opacity: 1;
+
+            @media(max-width: 767px) {
+                height: 10px;
+            }
+        }
+
+        100% {
+            height: 0;
+            top: 70px;
+            opacity: 0;
+        }
+    }
+
+    .d-flex {
+        justify-content: space-around;
+
+        @media(max-width: 767px) {
+            justify-content: flex-start;
+        }
+    }
+
+    .cocktail_inner {
+        width: 30%;
+
+        @media(max-width: 767px) {
+            width: 45%;
+            margin-right: 5%;
         }
     }
 
@@ -77,8 +172,8 @@ img {
         border-bottom: 1px solid #1F1E1E;
         display: inline-block;
 
-        @media(max-width: 767px) {
-            font-size: 22px;
+        @media(max-width: 1100px) {
+            font-size: 19px;
             margin-bottom: 20px;
         }
     }
@@ -90,7 +185,7 @@ img {
         border-radius: 20px;
 
         @media(max-width: 767px) {
-            padding: 0;
+            padding: 10px 0;
         }
     }
 
@@ -101,7 +196,7 @@ img {
     }
 
     .cocktail_txt {
-        font-size: 23px;
+        font-size: 20px;
 
         @media(max-width: 767px) {
             font-size: 16px
@@ -110,36 +205,65 @@ img {
 
     .small {
         @media(max-width: 767px) {
-            font-size: 12px
+            font-size: 11px
         }
     }
 
     .cocktail_img {
-        width: 23%;
+        width: 59px;
+
+        @media(max-width: 767px) {
+            width: 23%;
+        }
     }
 
     .cocktail_img.mojito {
-        width: 33%;
+        width: 85px;
+
+        @media(max-width: 767px) {
+            width: 33%;
+        }
     }
 
     .cocktail_img.margatita {
-        width: 31%;
+        width: 80px;
+
+        @media(max-width: 767px) {
+            width: 31%;
+        }
     }
 
     .cocktail_img.blueLagoon {
-        width: 27%;
+        width: 70px;
+
+        @media(max-width: 767px) {
+            width: 27%;
+        }
     }
 
     .cocktail_img.kirRoyale {
-        width: 16%;
+        width: 41px;
+
+        @media(max-width: 767px) {
+            width: 16%;
+        }
     }
 
     .cocktail_img.russianSpringPunch {
-        width: 26%;
+        width: 67px;
+
+        @media(max-width: 767px) {
+            width: 26%;
+        }
     }
 }
 
 footer {
     background-color: #3A3A3A;
     padding: 20px;
+
+    @media(max-width: 767px) {
+        font-size: 13px;
+        padding: 15px;
+    }
 }
