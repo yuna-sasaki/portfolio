@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my bar</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="bg-gray position-fixed w-100">
+        <div class="inner">
+            <div class="d-flex justify-content-between align-items-center font-weight-bold">
+                <a href="">
+                    <p class="txt_darkgray fw-bold fs-18">YUNA SASAKI</p>
+                </a>
+
+                <div class="header_menu d-none d-md-flex justify-content-between">
+                    <a href="">
+                        <p class="txt_darkgray fw-bold fs-18 me-4">TOP</p>
+                    </a>
+                    <a href="#works">
+                        <p class="txt_darkgray fw-bold fs-18 me-4">WORKS</p>
+                    </a>
+                    <a href="#skill">
+                        <p class="txt_darkgray fw-bold fs-18 me-4">SKILL</p>
+                    </a>
+                    <a href="#profile">
+                        <p class="txt_darkgray fw-bold fs-18">PROFILE</p>
+                    </a>
+                </div>
+
+                <!-- SP用ハンバーガーメニュー -->
+                <div class="d-md-none">
+                    <!-- ハンバーガーメニュー部分 -->
+                    <div class="drawer">
+                        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                        <input type="checkbox" id="drawer-check" class="drawer-hidden">
+
+                        <!-- ハンバーガーアイコン -->
+                        <label for="drawer-check" class="drawer-open"><span></span></label>
+
+                        <!-- メニュー -->
+                        <nav class="drawer-content bg_lightblue">
+                            <div class="drawer-list">
+
+                                <div class="drawer-item">
+                                    <a href="">
+                                        <p class="txt_white fw-bold mb-0 mx-3">TOP</p>
+                                    </a>
+                                </div><!-- /.drawer-item -->
+
+                                <div class="drawer-item mt-4">
+                                    <a href="#works">
+                                        <p class="txt_white fw-bold mb-0 mx-3">WORKS</p>
+                                    </a>
+                                </div><!-- /.drawer-item -->
+
+                                <div class="drawer-item mt-4">
+                                    <a href="#skill">
+                                        <p class="txt_white fw-bold mb-0 mx-3">SKILL</p>
+                                    </a>
+                                </div><!-- /.drawer-item -->
+
+                                <div class="drawer-item mt-4">
+                                    <a href="#profile">
+                                        <p class="txt_white fw-bold mb-0 mx-3">PROFILE</p>
+                                    </a>
+                                </div><!-- /.drawer-item -->
+
+                            </div><!-- /.drawer-list -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="works">
+        <div class="bg-gray">
+            <div class="inner">
+                <p class="fs-36 fw-bold text-center">WORKS</p>
+
+                <p class="fs-20 fw-bold">コーディング</p>
+                <div class="works_wrap d-flex justify-content-between flex-wrap">
+                    <div class="works_item">
+                        <img class="mb-3" src="img/company_1.jpg" alt="">
+                        <p class="fw-bold">株式会社日本パープル</p>
+                        <p class="fs-14 fw-bold">書類保管サービスSHOKO LP</p>
+                        <a class="fs-14 mb-4 d-block" href="https://www.mamoru-kun.com/shoko_lp/">https://www.mamoru-kun.com/shoko_lp/</a>
+
+                        <p class="mb-2">株式会社日本パープル様の「SHOKO」サービスのLPの実装を行いました。</p>
+                        <p>【使用言語】HTML  CSS  JS Bootstrap</p>
+                    </div>
+
+                    <div class="works_item">
+                        <img src="img/company_1.jpg" alt="">
+                        <p class="fw-bold">株式会社日本パープル</p>
+                        <p class="fs-14 fw-bold">書類保管サービスSHOKO LP</p>
+                        <a class="fs-14" href="https://www.mamoru-kun.com/shoko_lp/"></a>
+
+                        <p>株式会社日本パープル様の「SHOKO」サービスのLPの実装を行いました。</p>
+                        <p>【使用言語】HTML  CSS  JS Bootstrap</p>
+                    </div>
+
+                    <div class="works_item">
+                        <img src="img/company_1.jpg" alt="">
+                        <p class="fw-bold">株式会社日本パープル</p>
+                        <p class="fs-14 fw-bold">書類保管サービスSHOKO LP</p>
+                        <a class="fs-14" href="https://www.mamoru-kun.com/shoko_lp/"></a>
+
+                        <p>株式会社日本パープル様の「SHOKO」サービスのLPの実装を行いました。</p>
+                        <p>【使用言語】HTML  CSS  JS Bootstrap</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- フッター -->
+    <footer>
+        <p class="text-white fw-bold mb-0 text-center">©YUNA SASAKI</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
