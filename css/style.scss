@@ -80,6 +80,10 @@ img {
     background-color: #F6F4F4;
 }
 
+.notoserif {
+    font-family: 'Noto Serif JP';
+}
+
 .inner {
     max-width: 1100px;
     width: 100%;
@@ -97,6 +101,18 @@ img {
 
     @media(max-width: 760px) {
         margin: 0 20px;
+    }
+}
+
+.sp {
+    @media(min-width: 769px) {
+        display: none;
+    }
+}
+
+.pc {
+    @media(max-width: 768px) {
+        display: none;
     }
 }
 
@@ -334,6 +350,7 @@ img {
 
 header {
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .2);
+
     .inner {
         padding: 20px;
 
@@ -370,7 +387,7 @@ header {
         height: 3px;
         width: 25px;
         border-radius: 3px;
-        background: #1F1E1E ;
+        background: #1F1E1E;
         transition: 0.5s;
         position: absolute;
     }
@@ -422,16 +439,115 @@ header {
 }
 
 /* =====================
-          WORKS
+          FV
 ===================== */
-#works {
+#fv {
     padding-top: 67px;
+    position: relative;
 
-    .works_item {
-        width: 30%;
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 130px;
+        font-weight: 700;
+
+        @media(max-width: 767px) {
+            font-size: 64px;
+        }
+    }
+
+    p {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -65%);
+        font-size: 25px;
+        font-weight: 700;
+        white-space: nowrap;
+
+        @media(max-width: 767px) {
+            font-size: 17px;
+        }
+    }
+
+    .cocktail_img {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        box-shadow: none;
+        width: 12%;
+
+        @media(max-width: 767px) {
+            width: 25%;
+        }
     }
 }
 
+
+/* =====================
+          WORKS
+===================== */
+#works {
+
+    .bg-gray {
+        padding-block: 70px;
+    }
+
+    .works_item {
+        width: 30%;
+
+        @media(max-width: 767px) {
+            width: 40%;
+            overflow-x: hidden;
+        }
+    }
+
+    .design_wrap {
+        align-items: center;
+    }
+
+    .design_item {
+        width: 22%;
+
+        @media(max-width: 767px) {
+            width: 40%;
+        }
+    }
+}
+
+/* =====================
+          SKILL
+===================== */
+#skill {
+    padding-block: 70px;
+
+    .skill_wrap {
+        margin-bottom: 90px;
+    }
+
+    .skill_item {
+        @media(min-width: 768px) {
+            width: 30%;
+        }
+
+        @media(max-width: 768px) {
+            margin-bottom: 2.5rem;
+        }
+
+        img {
+            width: 110px;
+            box-shadow: none;
+        }
+    }
+
+    hr {
+        height: 2px;
+        background-color: #707070;
+        border: none;
+    }
+}
 
 /* =====================
           FOOTER
