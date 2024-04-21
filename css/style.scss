@@ -52,6 +52,12 @@ img {
     font-size: 14px;
 }
 
+.fs-15-sp {
+    @media(max-width: 760px) {
+        font-size: 15px;
+    }
+}
+
 .fs-18 {
     font-size: 18px;
 }
@@ -121,6 +127,26 @@ img {
 .pc {
     @media(max-width: 768px) {
         display: none;
+    }
+}
+
+// 画像アニメーション
+.fadeUp.on {
+    animation-name: fadeUpAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -370,7 +396,13 @@ header {
         padding: 20px;
 
         @media(max-width: 760px) {
-            padding: 10px 20px;
+            padding: 3px 20px;
+        }
+    }
+
+    .fs-18 {
+        @media(max-width: 760px) {
+            font-size: 15px;
         }
     }
 
@@ -438,7 +470,7 @@ header {
         width: 50%;
         height: 100%;
         position: fixed;
-        top: 65px;
+        top: 51px;
         left: 100%;
         z-index: 99;
         background: #90AC98;
@@ -459,6 +491,10 @@ header {
 #fv {
     padding-top: 67px;
     position: relative;
+
+    @media(max-width: 760px) {
+        padding-top: 51px;
+    }
 
     animation-name: blurAnime;
     animation-duration: 2s;
@@ -563,9 +599,7 @@ header {
         }
     }
 
-    .design_wrap {
-        
-    }
+    .design_wrap {}
 
     .design_item {
         width: 22%;
@@ -628,12 +662,20 @@ header {
     }
 
     .profile_wrap {
-        margin-bottom: 90px;
+        margin-top: 40px;
+
+        .name {
+            text-align: center;
+        }
 
         img {
             border-radius: 50%;
             width: 20%;
             margin-right: 8%;
+
+            @media(max-width: 767px) {
+                width: 30%;
+            }
         }
     }
 }
@@ -678,6 +720,10 @@ header {
             animation-fill-mode: forwards;
             animation-delay: 1s;
             opacity: 0;
+
+            @media(max-width: 767px) {
+                animation-name: fadeRightAnime_sp;
+            }
         }
 
         @keyframes fadeRightAnime {
@@ -692,8 +738,24 @@ header {
             }
         }
 
+        @keyframes fadeRightAnime_sp {
+            from {
+                opacity: 0;
+                left: 100%;
+            }
+
+            to {
+                opacity: 1;
+                left: 7%;
+            }
+        }
+
         .contact_messege_img {
             width: 50%;
+
+            @media(max-width: 767px) {
+                width: 65%;
+            }
         }
 
         .contact_messege_img.fadeUp {

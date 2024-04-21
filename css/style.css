@@ -51,6 +51,12 @@ img {
   font-size: 14px;
 }
 
+@media (max-width: 760px) {
+  .fs-15-sp {
+    font-size: 15px;
+  }
+}
+
 .fs-18 {
   font-size: 18px;
 }
@@ -127,6 +133,23 @@ img {
   }
 }
 
+.fadeUp.on {
+  animation-name: fadeUpAnime;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* =====================
           MENU
 ===================== */
@@ -373,7 +396,12 @@ header .inner {
 }
 @media (max-width: 760px) {
   header .inner {
-    padding: 10px 20px;
+    padding: 3px 20px;
+  }
+}
+@media (max-width: 760px) {
+  header .fs-18 {
+    font-size: 15px;
   }
 }
 header .drawer-hidden {
@@ -423,7 +451,7 @@ header .drawer-content {
   width: 50%;
   height: 100%;
   position: fixed;
-  top: 65px;
+  top: 51px;
   left: 100%;
   z-index: 99;
   background: #90AC98;
@@ -444,6 +472,11 @@ header #drawer-check:checked ~ .drawer-content {
   animation-name: blurAnime;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+}
+@media (max-width: 760px) {
+  #fv {
+    padding-top: 51px;
+  }
 }
 @keyframes blurAnime {
   from {
@@ -588,12 +621,20 @@ header #drawer-check:checked ~ .drawer-content {
   padding-block: 70px;
 }
 #profile .profile_wrap {
-  margin-bottom: 90px;
+  margin-top: 40px;
+}
+#profile .profile_wrap .name {
+  text-align: center;
 }
 #profile .profile_wrap img {
   border-radius: 50%;
   width: 20%;
   margin-right: 8%;
+}
+@media (max-width: 767px) {
+  #profile .profile_wrap img {
+    width: 30%;
+  }
 }
 
 /* =====================
@@ -632,6 +673,11 @@ header #drawer-check:checked ~ .drawer-content {
   animation-delay: 1s;
   opacity: 0;
 }
+@media (max-width: 767px) {
+  #contact .contact_messege_wrap .contact_cocktail_img.fadeRight {
+    animation-name: fadeRightAnime_sp;
+  }
+}
 @keyframes fadeRightAnime {
   from {
     opacity: 0;
@@ -642,8 +688,23 @@ header #drawer-check:checked ~ .drawer-content {
     left: 15%;
   }
 }
+@keyframes fadeRightAnime_sp {
+  from {
+    opacity: 0;
+    left: 100%;
+  }
+  to {
+    opacity: 1;
+    left: 7%;
+  }
+}
 #contact .contact_messege_wrap .contact_messege_img {
   width: 50%;
+}
+@media (max-width: 767px) {
+  #contact .contact_messege_wrap .contact_messege_img {
+    width: 65%;
+  }
 }
 #contact .contact_messege_wrap .contact_messege_img.fadeUp {
   animation-name: fadeUpAnime;

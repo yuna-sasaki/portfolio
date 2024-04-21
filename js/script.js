@@ -70,3 +70,18 @@ $(function () {
 		});
 	}
 });
+
+// 画像アニメーション
+$(window).scroll(function () {
+    var scrollAnimationElm = document.querySelectorAll('.fadeUp');
+    var scrollAnimationFunc = function () {
+        for (var i = 0; i < scrollAnimationElm.length; i++) {
+            var triggerMargin = 0;
+            if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+                scrollAnimationElm[i].classList.add('on');
+            }
+        }
+    }
+    window.addEventListener('load', scrollAnimationFunc);
+    window.addEventListener('scroll', scrollAnimationFunc);
+});
