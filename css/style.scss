@@ -473,11 +473,34 @@ header {
         top: 51px;
         left: 100%;
         z-index: 99;
-        background: #90AC98;
         transition: .5s;
         padding: 40px 20px;
     }
 
+    .drawer-content.mojito {
+        background: #90AC98;
+    }
+
+    .drawer-content.pinaColada {
+        background: #FCEAB0;
+    }
+
+    .drawer-content.espressoMartini {
+        background: #BBBBBB;
+    }
+
+    .drawer-content.margatita {
+        background: #AAB283;
+    }
+
+    .drawer-content.tequlaSunrise {
+        background: #1E1038;
+    }
+
+    .drawer-content.russianSpringPunch {
+        background: #7E1377;
+    }
+    
     /* アイコンがクリックされたらメニューを表示 */
     #drawer-check:checked~.drawer-content {
         right: 0;
@@ -548,22 +571,42 @@ header {
         position: absolute;
         bottom: 5%;
         box-shadow: none;
-        width: 12%;
+        height: 32%;
 
         @media(max-width: 767px) {
-            width: 25%;
+            height: 29%;
         }
     }
 
     .fadeRight {
-        animation-name: fadeRightAnime;
+        // animation-name: fadeRightAnime_fv;
         animation-duration: 0.5s;
         animation-fill-mode: forwards;
         animation-delay: 1.5s;
         opacity: 0;
+
+        @media(min-width: 767px) {
+            animation-name: fadeRightAnime_fv;
+        }
+
+        @media(max-width: 767px) {
+            animation-name: fadeRightAnime_fv_sp;
+        }
     }
 
-    @keyframes fadeRightAnime {
+    @keyframes fadeRightAnime_fv {
+        from {
+            opacity: 0;
+            left: 100%;
+        }
+
+        to {
+            opacity: 1;
+            left: 15%;
+        }
+    }
+
+    @keyframes fadeRightAnime_fv_sp {
         from {
             opacity: 0;
             left: 100%;
@@ -793,4 +836,28 @@ footer {
         font-size: 13px;
         padding: 15px;
     }
+}
+
+footer#mojito {
+    background-color: #90AC98;
+}
+
+footer#pinaColada {
+    background-color: #FCEAB0;
+}
+
+footer#espressoMartini {
+    background-color: #BBBBBB;
+}
+
+footer#margatita {
+    background-color: #AAB283;
+}
+
+footer#tequlaSunrise {
+    background-color: #1E1038;
+}
+
+footer#russianSpringPunch {
+    background-color: #7e1377;
 }

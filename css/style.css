@@ -454,9 +454,26 @@ header .drawer-content {
   top: 51px;
   left: 100%;
   z-index: 99;
-  background: #90AC98;
   transition: 0.5s;
   padding: 40px 20px;
+}
+header .drawer-content.mojito {
+  background: #90AC98;
+}
+header .drawer-content.pinaColada {
+  background: #FCEAB0;
+}
+header .drawer-content.espressoMartini {
+  background: #BBBBBB;
+}
+header .drawer-content.margatita {
+  background: #AAB283;
+}
+header .drawer-content.tequlaSunrise {
+  background: #1E1038;
+}
+header .drawer-content.russianSpringPunch {
+  background: #7E1377;
 }
 header #drawer-check:checked ~ .drawer-content {
   right: 0;
@@ -524,21 +541,40 @@ header #drawer-check:checked ~ .drawer-content {
   position: absolute;
   bottom: 5%;
   box-shadow: none;
-  width: 12%;
+  height: 32%;
 }
 @media (max-width: 767px) {
   #fv .cocktail_img {
-    width: 25%;
+    height: 29%;
   }
 }
 #fv .fadeRight {
-  animation-name: fadeRightAnime;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-delay: 1.5s;
   opacity: 0;
 }
-@keyframes fadeRightAnime {
+@media (min-width: 767px) {
+  #fv .fadeRight {
+    animation-name: fadeRightAnime_fv;
+  }
+}
+@media (max-width: 767px) {
+  #fv .fadeRight {
+    animation-name: fadeRightAnime_fv_sp;
+  }
+}
+@keyframes fadeRightAnime_fv {
+  from {
+    opacity: 0;
+    left: 100%;
+  }
+  to {
+    opacity: 1;
+    left: 15%;
+  }
+}
+@keyframes fadeRightAnime_fv_sp {
   from {
     opacity: 0;
     left: 100%;
@@ -736,4 +772,28 @@ footer {
     font-size: 13px;
     padding: 15px;
   }
+}
+
+footer#mojito {
+  background-color: #90AC98;
+}
+
+footer#pinaColada {
+  background-color: #FCEAB0;
+}
+
+footer#espressoMartini {
+  background-color: #BBBBBB;
+}
+
+footer#margatita {
+  background-color: #AAB283;
+}
+
+footer#tequlaSunrise {
+  background-color: #1E1038;
+}
+
+footer#russianSpringPunch {
+  background-color: #7e1377;
 }/*# sourceMappingURL=style.css.map */
