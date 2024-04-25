@@ -481,6 +481,9 @@ header .drawer-content.blueLagoon {
 header .drawer-content.KirRoyale {
   background: #891e56;
 }
+header .drawer-content.bloodyMary {
+  background: #dc3545;
+}
 header #drawer-check:checked ~ .drawer-content {
   right: 0;
   left: auto;
@@ -810,4 +813,8 @@ footer#blueLagoon {
 
 footer#kirRoyale {
   background-color: #891e56;
+}
+
+footer#bloodyMary {
+  background-color: #dc3545;
 }/*# sourceMappingURL=style.css.map */

@@ -508,6 +508,10 @@ header {
     .drawer-content.KirRoyale {
         background: #891e56;
     }
+
+    .drawer-content.bloodyMary {
+        background: #dc3545;
+    }
     
     /* アイコンがクリックされたらメニューを表示 */
     #drawer-check:checked~.drawer-content {
@@ -876,4 +880,8 @@ footer#blueLagoon {
 
 footer#kirRoyale {
     background-color: #891e56;
+}
+
+footer#bloodyMary {
+    background-color: #dc3545;
 }

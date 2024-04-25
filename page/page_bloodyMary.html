@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my bar</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="bg-gray position-fixed w-100">
+        <div class="inner">
+            <div class="d-flex justify-content-between align-items-center font-weight-bold">
+                <a href="#">
+                    <p class="txt_darkgray fw-bold fs-18">YUNA SASAKI</p>
+                </a>
+
+                <div class="header_menu d-none d-md-flex justify-content-between">
+                    <a href="">
+                        <p class="txt_darkgray fw-bold fs-18 me-4">TOP</p>
+                    </a>
+                    <a href="#works">
+                        <p class="txt_darkgray fw-bold fs-18 me-4">WORKS</p>
+                    </a>
+                    <a href="#skill">
+                        <p class="txt_darkgray fw-bold fs-18 me-4">SKILL</p>
+                    </a>
+                    <a href="#profile">
+                        <p class="txt_darkgray fw-bold fs-18 me-4">PROFILE</p>
+                    </a>
+                    <a href="/portfolio">
+                        <p class="txt_darkgray fw-bold fs-18">MENU</p>
+                    </a>
+                </div>
+
+                <!-- SP用ハンバーガーメニュー -->
+                <div class="d-md-none">
+                    <!-- ハンバーガーメニュー部分 -->
+                    <div class="drawer">
+                        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                        <input type="checkbox" id="drawer-check" class="drawer-hidden">
+
+                        <!-- ハンバーガーアイコン -->
+                        <label for="drawer-check" class="drawer-open"><span></span></label>
+
+                        <!-- メニュー -->
+                        <nav class="drawer-content bloodyMary">
+                            <div class="drawer-list">
+
+                                <div class="drawer-item">
+                                    <a href="#">
+                                        <p class="txt_white fw-bold mb-0 mx-3">TOP</p>
+                                    </a>
+                                </div><!-- /.drawer-item -->
+
+                                <div class="drawer-item mt-4">
+                                    <a href="#works">
+                                        <p class="txt_white fw-bold mb-0 mx-3">WORKS</p>
+                                    </a>
+                                </div><!-- /.drawer-item -->
+
+                                <div class="drawer-item mt-4">
+                                    <a href="#skill">
+                                        <p class="txt_white fw-bold mb-0 mx-3">SKILL</p>
+                                    </a>
+                                </div><!-- /.drawer-item -->
+
+                                <div class="drawer-item mt-4">
+                                    <a href="#profile">
+                                        <p class="txt_white fw-bold mb-0 mx-3">PROFILE</p>
+                                    </a>
+                                </div><!-- /.drawer-item -->
+
+                                <div class="drawer-item mt-4">
+                                    <a href="/portfolio">
+                                        <p class="txt_white fw-bold mb-0 mx-3">MENU</p>
+                                    </a>
+                                </div><!-- /.drawer-item -->
+
+                            </div><!-- /.drawer-list -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="fv">
+        <img src="../img/fv_bloodyMary_pc.jpg" alt="" class="pc">
+        <img src="../img/fv_bloodyMary_sp.jpg" alt="" class="sp">
+        <div class="fv_wrap">
+            <h1 class="notoserif mb-4">Welcome!</h1>
+            <p>YUNA SASAKI PORTFOLIO SITE</p>
+        </div>
+        <img src="../img/cocktail/BloodyMary.png" alt="" class="cocktail_img fadeRight">
+    </section>
+
+    <section id="works">
+        <div class="bg-gray">
+            <div class="inner">
+                <p class="fs-36 fw-bold text-center mb-4">WORKS</p>
+
+                <p class="fs-20 fw-bold mb-4">コーディング</p>
+                <div>
+                    <div class="works_wrap fadeUp">
+                        <div class="d-flex flex-wrap">
+                            <!-- 1 -->
+                            <div class="works_item mb-4 mb-md-5 mx-3">
+                                <a href="https://www.mamoru-kun.com/shoko_lp/" class="d-block">
+                                    <img class="mb-3" src="../img/company_1.jpg" alt="">
+                                    <p class="fw-bold">株式会社日本パープル</p>
+                                    <p class="fs-14 fw-bold">書類保管サービスSHOKO LP</p>
+                                    <p class="fs-14 mb-4 d-md-block pc">https://www.mamoru-kun.com/shoko_lp/</p>
+                                    <p class="mb-2 pc">株式会社日本パープル様の「SHOKO」サービスのLPの実装を行いました。</p>
+                                    <p class="fs-15-sp">【使用言語】HTML CSS JS Bootstrap</p>
+                                </a>
+                            </div>
+                            <!-- 2 -->
+                            <div class="works_item mb-4 mb-md-5 mx-3">
+                                <a href="https://protea-inc.co.jp/biyo-shoku-ranking/" class="d-block">
+                                    <img class="mb-3" src="../img/company_2.jpg" alt="">
+                                    <p class="fw-bold">As-meエステール株式会社</p>
+                                    <p class="fs-14 fw-bold">私の完全美容食ランキングサイト</p>
+                                    <p class="fs-14 mb-4 d-md-block pc">https://protea-inc.co.jp/biyo-shoku-ranking/</p>
+                                    <p class="mb-2 pc">As-meエステール株式会社様の「大豆プロテイン」私の完全美容食ランキングサイトを作成しました。</p>
+                                    <p class="fs-15-sp">【使用言語】PHP CSS JS</p>
+                                </a>
+                            </div>
+
+                            <!-- 3 -->
+                            <div class="works_item mb-4 mb-md-5 mx-3">
+                                <a href="https://zerokarainc.com/media/" class="d-block">
+                                    <img class="mb-3" src="../img/company_3.jpg" alt="">
+                                    <p class="fw-bold">株式会社ゼロカラ</p>
+                                    <p class="fs-14 fw-bold">メディアサイト</p>
+                                    <p class="fs-14 mb-4 d-md-block pc">https://zerokarainc.com/media/</p>
+                                    <p class="mb-2 pc">株式会社ゼロカラ様の、冷凍食品などに関する記事を掲載するメディアサイトを作成しました。</p>
+                                    <p class="fs-15-sp">【使用ツール】WordPress</p>
+                                </a>
+                            </div>
+
+                            <!-- 4 -->
+                            <div class="works_item mb-4 mb-md-5 mx-3">
+                                <a href="https://zerokarainc.com/lp/" class="d-block">
+                                    <img class="mb-3" src="../img/company_4.jpg" alt="">
+                                    <p class="fw-bold">株式会社ゼロカラ</p>
+                                    <p class="fs-14 fw-bold">toB用　LP</p>
+                                    <p class="fs-14 mb-4 d-md-block pc">https://zerokarainc.com/lp/</p>
+                                    <p class="mb-2 pc">株式会社ゼロカラ様の、BtoB向けのLPを作成しました。</p>
+                                    <p class="fs-15-sp">【使用ツール】PHP CSS JS</p>
+                                </a>
+                            </div>
+
+                            <!-- 15 -->
+                            <div class="works_item mb-4 mb-md-5 mx-3">
+                                <a href="https://zerokarainc.com/" class="d-block">
+                                    <img class="mb-3" src="../img/company_15.jpg" alt="">
+                                    <p class="fw-bold">株式会社ジェイディ</p>
+                                    <p class="fs-14 fw-bold">JADEE メディアサイト</p>
+                                    <p class="fs-14 mb-4 d-md-block pc">https://www.jadee.net/column/</p>
+                                    <p class="mb-2 pc">マタニティ花嫁専門ウェディングドレス店JADEEのメディアサイトを作成しました。</p>
+                                    <p class="fs-15-sp">【使用言語】WordPress</p>
+                                </a>
+                            </div>
+
+                            <!-- 13 -->
+                            <div class="works_item mb-4 mb-md-5 mx-3">
+                                <a href="https://zerokarainc.com/" class="d-block">
+                                    <img class="mb-3" src="../img/company_13.jpg" alt="">
+                                    <p class="fw-bold">株式会社ティーアンドエス</p>
+                                    <p class="fs-14 fw-bold">Travel Sentry LP</p>
+                                    <p class="fs-14 mb-4 d-md-block pc">https://travel-sentry.legend-walker.com/index.php</p>
+                                    <p class="mb-2 pc">トラベルアクセサリーのTravel SentryとスーツケースブランドのLegend WalkerのLPを作成しました。</p>
+                                    <p class="fs-15-sp">【使用言語】HTML  CSS  JS Bootstrap</p>
+                                </a>
+                            </div>
+
+                            <!-- 14 -->
+                            <div class="works_item mb-4 mb-md-5 mx-3">
+                                <a href="https://zerokarainc.com/" class="d-block">
+                                    <img class="mb-3" src="../img/company_14.jpg" alt="">
+                                    <p class="fw-bold">株式会社ティーアンドエス</p>
+                                    <p class="fs-14 fw-bold">LAYER LP</p>
+                                    <p class="fs-14 mb-4 d-md-block pc">https://protea-inc.co.jp/test/layer/</p>
+                                    <p class="mb-2 pc">スーツケースブランドのLegend Walkerの新商品「LAYER」のLPを作成しました。</p>
+                                    <p class="fs-15-sp">【使用言語】HTML  CSS  JS Bootstrap</p>
+                                </a>
+                            </div>
+
+                            <!-- 12 -->
+                            <div class="works_item mb-4 mb-md-5 mx-3">
+                                <a href="https://zerokarainc.com/" class="d-block">
+                                    <img class="mb-3" src="../img/company_12.jpg" alt="">
+                                    <p class="fw-bold">株式会社ゼロカラ</p>
+                                    <p class="fs-14 fw-bold">ホームページ　改修</p>
+                                    <p class="fs-14 mb-4 d-md-block pc">https://zerokarainc.com/</p>
+                                    <p class="mb-2 pc">株式会社ゼロカラ様の、ホームページのトップとメニューの改修を行いました。</p>
+                                    <p class="fs-15-sp">【使用ツール】PHP CSS JS</p>
+                                </a>
+                            </div>
+
+                            <!-- 5 -->
+                            <div class="works_item mb-4 mb-md-5 mx-3">
+                                <a href="https://kdat.jp/lp-general/" class="d-block">
+                                    <img class="mb-3" src="../img/company_5.jpg" alt="">
+                                    <p class="fw-bold">カツデン株式会社</p>
+                                    <p class="fs-14 fw-bold">ショートLP</p>
+                                    <p class="fs-14 mb-4 d-md-block pc">https://kdat.jp/lp-general/</p>
+                                    <p class="mb-2 pc">カツデン株式会社様のお問い合わせ用ショートLPの実装をしました。</p>
+                                    <p class="fs-15-sp">【使用ツール】WordPress</p>
+                                </a>
+                            </div>
+
+                            <!-- 6 -->
+                            <div class="works_item mb-4 mb-md-5 mx-3">
+                                <a href="https://lp-kanmincloud.com/?gad_source=1&gclid=CjwKCAiA_5WvBhBAEiwAZtCU7zH6deizCO8bRBmOSJlGzV5GjoZl5L2PtsgnIV-biZ4guem8EjfdbxoC_k4QAvD_BwE"
+                                    class="d-block">
+                                    <img class="mb-3" src="../img/company_6.jpg" alt="">
+                                    <p class="fw-bold">ディースタンダード株式会社</p>
+                                    <p class="fs-14 fw-bold">官民クラウド　LP</p>
+                                    <p class="fs-14 mb-4 d-md-block pc">https://lp-kanmincloud.com/?...</p>
+                                    <p class="mb-2 pc">ディースタンダード株式会社様の「官民クラウド」の実装をしました。</p>
+                                    <p class="fs-15-sp">【使用ツール】HTML CSS JS</p>
+                                </a>
+                            </div>
+
+                            <!-- 7 -->
+                            <div class="works_item mb-4 mb-md-5 mx-3">
+                                <a href="https://www.fellow-academy.com/fellow/pages/lp-college/" class="d-block">
+                                    <img class="mb-3" src="../img/company_7.jpg" alt="">
+                                    <p class="fw-bold">株式会社アメリア・ネットワーク</p>
+                                    <p class="fs-14 fw-bold">翻訳専門校フェロー・アカデミー　LP</p>
+                                    <p class="fs-14 mb-4 d-md-block pc">
+                                        https://www.fellow-academy.com/fellow/pages/lp-college/</p>
+                                    <p class="mb-2 pc">株式会社アメリア・ネットワーク様の翻訳専門校フェロー・アカデミーのLPを作成しました。</p>
+                                    <p class="fs-15-sp">【使用言語】HTML CSS JS</p>
+                                </a>
+                            </div>
+
+                            <!-- 8 -->
+                            <div class="works_item mb-4 mb-md-5 mx-3">
+                                <a href="https://p-m-g.tokyo/pmg_recruit/interview_ho_newgraduate.php" class="d-block">
+                                    <img class="mb-3" src="../img/company_8.jpg" alt="">
+                                    <p class="fw-bold">ピーエムジー株式会社</p>
+                                    <p class="fs-14 fw-bold">採用サイト　新卒ページ</p>
+                                    <p class="fs-14 mb-4 d-md-block pc">
+                                        https://p-m-g.tokyo/pmg_recruit/interview_ho_newgraduate.php</p>
+                                    <p class="mb-2 pc">株式会社GEウェルネス様の「EDOBIO」のヘアケアシリーズのLPを作成しました。</p>
+                                    <p class="fs-15-sp">【使用言語】HTML CSS JS</p>
+                                </a>
+                            </div>
+
+                            <!-- 9 -->
+                            <div class="works_item mb-4 mb-md-5 mx-3">
+                                <a href="https://kisohinoki300.com/pages/maternitymama-lp?ls=ja" class="d-block">
+                                    <img class="mb-3" src="../img/company_9.jpg" alt="">
+                                    <p class="fw-bold">株式会社木曽檜三百年</p>
+                                    <p class="fs-14 fw-bold">マタニティママ歯みがきジェル</p>
+                                    <p class="fs-14 mb-4 d-md-block pc">
+                                        https://kisohinoki300.com/pages/maternitymama-lp?ls=ja</p>
+                                    <p class="mb-2 pc">株式会社木曽檜三百年様の「木曽檜歯磨きジェル」の妊婦さん用の歯みがきジェルのLPを作成しました。</p>
+                                    <p class="fs-15-sp">【使用言語】HTML CSS JS</p>
+                                </a>
+                            </div>
+
+                            <!-- 10 -->
+                            <div class="works_item mb-4 mb-md-5 mx-3">
+                                <a href="https://protea-inc.co.jp/kisohinoki/" class="d-block">
+                                    <img class="mb-3" src="../img/company_10.jpg" alt="">
+                                    <p class="fw-bold">株式会社木曽檜三百年</p>
+                                    <p class="fs-14 fw-bold">犬用歯みがきジェル　LP</p>
+                                    <p class="fs-14 mb-4 d-md-block pc">https://protea-inc.co.jp/kisohinoki/</p>
+                                    <p class="mb-2 pc">株式会社木曽檜三百年様の「木曽檜歯磨きジェル」の犬用の歯みがきジェルのLPを作成しました。</p>
+                                    <p class="fs-15-sp">【使用言語】HTML CSS</p>
+                                </a>
+                            </div>
+
+                            <!-- 11 -->
+                            <div class="works_item mb-4 mb-md-5 mx-3">
+                                <a href="https://protea-inc.co.jp/test/EDOBIO/fix01/" class="d-block">
+                                    <img class="mb-3" src="../img/company_11.jpg" alt="">
+                                    <p class="fw-bold">株式会社GEウェルネス</p>
+                                    <p class="fs-14 fw-bold">EDOBIO　LP</p>
+                                    <p class="fs-14 mb-4 d-md-block pc">https://protea-inc.co.jp/test/EDOBIO/fix01/</p>
+                                    <p class="mb-2 pc">株式会社GEウェルネス様の「EDOBIO」のヘアケアシリーズのLPを作成しました。</p>
+                                    <p class="fs-15-sp">【使用言語】HTML CSS JS</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="works_more more fw-bold">もっと見る</div>
+                    </div>
+                </div>
+                <div>
+                    <p class="fs-20 fw-bold mb-4">デザインギャラリー</p>
+                    <div class="design_wrap fadeUp">
+                        <div class="d-flex flex-wrap align-items-center">
+                            <img src="../img/pmg_1.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/pmg_2.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/Nincal_1.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/Nincal_2.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/strongheart_3.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/strongheart_2.png" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/strongheart_1.png" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/watashi_4.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/watashi_5.png" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/watashi_3.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/watashi_1.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/watashi_2.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/cyokastu.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/bloom_1.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/bloom_2.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/bloom_3.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/beequick_1.png" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/beequick_2.png" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/beequick_3.png" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/trunkroom.png" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/edobio_4.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/edobio_1.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/edobio_2.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/edobio_3.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/chewchew_1.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/chewchew_2.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                            <img src="../img/chewchew_3.jpg" alt="" class="design_item mb-4 mb-md-5 mx-3">
+                        </div>
+                        <div class="design_more more fw-bold">もっと見る</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skill">
+        <div class="inner">
+            <p class="fs-36 fw-bold text-center mb-4">SKILL</p>
+            <p class="fs-20 fw-bold text-center mb-4">対応可能な業務</p>
+
+            <div class="skill_wrap d-flex flex-md-row flex-column fadeUp">
+                <div class="skill_item mx-4 d-flex flex-column align-items-center">
+                    <img src="../img/icon_1.png" alt="">
+                    <p class="fw-bold mb-3 mt-2">コーデイング</p>
+                    <p class="fw-bold fs-14">
+                        コーディング経験は1年程度ですが、一番得意としている分野です。特にレスポンシブに対応したコーディングや、JavaScriptなどを使用した動きのあるデザインは現在も勉強中です。</p>
+                </div>
+
+                <div class="skill_item mx-4 d-flex flex-column align-items-center">
+                    <img src="../img/icon_2.png" alt="">
+                    <p class="fw-bold mb-3 mt-2">デザイン</p>
+                    <p class="fw-bold fs-14">バナーの作成や、サイトやLPの一部改修の経験があります。<br>コーディングもできることから、コーダー目線で、動きのあるデザインの提案が得意です。
+                    </p>
+                </div>
+
+                <div class="skill_item mx-4 d-flex flex-column align-items-center">
+                    <img src="../img/icon_3.png" alt="">
+                    <p class="fw-bold mb-3 mt-2">SNS運用</p>
+                    <p class="fw-bold fs-14">経験としては浅いですが、企業のインスタグラムの運用に携わりました。</p>
+                </div>
+            </div>
+
+            <p class="fs-20 fw-bold text-center mb-4">言語</p>
+            <div class="skill_wrap">
+                <div class="mb-5">
+                    <p class="fw-bold">HTML / CSS</p>
+                    <hr>
+                    <p class="fw-bold fs-15-sp">
+                        レスポンシブデザインに対応したコーデイングやSassなど、基本的なコーデイングは可能です。<br>BootstrapやBulmaなどフレームワークを使用したコーディング経験もあります。<br>使用エディタはVisualStudioCodeです。
+                    </p>
+                </div>
+                <div class="mb-5">
+                    <p class="fw-bold">JavaScript</p>
+                    <hr>
+                    <p class="fw-bold fs-15-sp">
+                        ライブラリーの実装やjQuery、基本的なコードは使用できます。<br>BootstrapやBulmaなどフレームワークを使用したコーディング経験もあります。<br>使用エディタはVisualStudioCodeです。
+                    </p>
+                </div>
+                <div class="mb-5">
+                    <p class="fw-bold">PHP</p>
+                    <hr>
+                    <p class="fw-bold fs-15-sp">PHPを使用した動的なWebページの作成の作成が可能です。</p>
+                </div>
+                <div class="mb-5">
+                    <p class="fw-bold">その他</p>
+                    <hr>
+                    <p class="fw-bold fs-15-sp">Java、SQL、Linaxの使用経験があります。</p>
+                </div>
+            </div>
+
+            <p class="fs-20 fw-bold text-center mb-4">ツール</p>
+            <div class="tool_wrap">
+                <div class="mb-5">
+                    <p class="fw-bold">Photoshop</p>
+                    <hr>
+                    <p class="fw-bold fs-15-sp">バナーの作成や、写真の加工などで使用しています。</p>
+                </div>
+                <div class="mb-5">
+                    <p class="fw-bold">Illustrator</p>
+                    <hr>
+                    <p class="fw-bold fs-15-sp">イラストは描けませんが、ソフトの基本機能は問題なく使用できます。</p>
+                </div>
+                <div class="mb-5">
+                    <p class="fw-bold">XD</p>
+                    <hr>
+                    <p class="fw-bold fs-15-sp">サイトデザインの作成でメインで使用しています。</p>
+                </div>
+                <div class="mb-5">
+                    <p class="fw-bold">WordPress</p>
+                    <hr>
+                    <p class="fw-bold fs-15-sp">1からの構築経験はありませんが、WordPressを使用したシステムの改修の案件に携わっています。</p>
+                </div>
+                <div class="">
+                    <p class="fw-bold">Git</p>
+                    <hr>
+                    <p class="fw-bold fs-15-sp">SE時代にソース管理は基本的にGitを使用していたため、問題なく使用できます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="profile">
+        <div class="bg-gray">
+            <div class="inner">
+                <p class="fs-36 fw-bold text-center mb-4">PROFILE</p>
+
+                <div class="profile_wrap d-flex align-items-center">
+                    <img src="../img/profile_img.png" alt="">
+                    <p class="name fs-20 fw-bold mb-4">佐々木 優菜<br class="sp">（ささき　ゆうな）</p>
+                </div>
+
+                <div class="profile_wrap">
+                    <div class="mb-5">
+                        <p class="fw-bold">経歴</p>
+                        <hr>
+                        <p class="fw-bold fs-15-sp">
+                            システムエンジニアとして3年ほど仕事をした後、Webデザイナーにキャリアチェンジしました。現在ではWebデザインの業務に携わって1年ほどになりました。
+                        </p>
+                    </div>
+                    <div class="mb-5">
+                        <p class="fw-bold">資格</p>
+                        <hr>
+                        <p class="fw-bold fs-15-sp">ITパスポート、Oracle Certified Java Programmer, Silver SE 11 認定資格</p>
+                    </div>
+                    <div class="">
+                        <p class="fw-bold">趣味</p>
+                        <hr>
+                        <p class="fw-bold fs-15-sp">韓国ドラマ鑑賞、韓国語、散歩、散歩中の犬を見ること、スイーツ、ダンス</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="inner">
+            <p class="fs-36 fw-bold text-center mb-4">CONTACT</p>
+            <div class="contact_wrap d-flex align-items-center justify-content-center">
+                <img src="../img/icon_4.png" alt="" class="me-2">
+                <p class="fw-bold">yun_larme@gmail.com</p>
+            </div>
+
+            <div class="contact_messege_wrap d-flex align-items-center justify-content-end">
+                <img src="../img/cocktail/Margatita.png" alt="" class="contact_cocktail_img">
+                <img src="../img/contact_img.png" alt="" class="contact_messege_img">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- フッター -->
+    <footer id="bloodyMary">
+        <p class="text-white fw-bold mb-0 text-center">©YUNA SASAKI</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
