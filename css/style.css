@@ -475,6 +475,12 @@ header .drawer-content.tequlaSunrise {
 header .drawer-content.russianSpringPunch {
   background: #7E1377;
 }
+header .drawer-content.blueLagoon {
+  background: #1b9bc2;
+}
+header .drawer-content.KirRoyale {
+  background: #891e56;
+}
 header #drawer-check:checked ~ .drawer-content {
   right: 0;
   left: auto;
@@ -796,4 +802,12 @@ footer#tequlaSunrise {
 
 footer#russianSpringPunch {
   background-color: #7e1377;
+}
+
+footer#blueLagoon {
+  background-color: #1b9bc2;
+}
+
+footer#kirRoyale {
+  background-color: #891e56;
 }/*# sourceMappingURL=style.css.map */

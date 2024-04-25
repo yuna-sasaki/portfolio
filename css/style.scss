@@ -500,6 +500,14 @@ header {
     .drawer-content.russianSpringPunch {
         background: #7E1377;
     }
+
+    .drawer-content.blueLagoon {
+        background: #1b9bc2;
+    }
+
+    .drawer-content.KirRoyale {
+        background: #891e56;
+    }
     
     /* アイコンがクリックされたらメニューを表示 */
     #drawer-check:checked~.drawer-content {
@@ -860,4 +868,12 @@ footer#tequlaSunrise {
 
 footer#russianSpringPunch {
     background-color: #7e1377;
+}
+
+footer#blueLagoon {
+    background-color: #1b9bc2;
+}
+
+footer#kirRoyale {
+    background-color: #891e56;
 }
