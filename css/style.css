@@ -700,15 +700,26 @@ header #drawer-check:checked ~ .drawer-content {
 #contact .contact_messege_wrap {
   position: relative;
 }
+#contact .contact_messege_wrap a:hover {
+  transform: none;
+}
 #contact .contact_messege_wrap .contact_cocktail_img {
-  width: 16%;
+  height: 220px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 @media (max-width: 767px) {
   #contact .contact_messege_wrap .contact_cocktail_img {
-    width: 25%;
+    height: 120px;
+  }
+}
+#contact .contact_messege_wrap .contact_cocktail_img.large {
+  height: 250px;
+}
+@media (max-width: 767px) {
+  #contact .contact_messege_wrap .contact_cocktail_img.large {
+    height: 150px;
   }
 }
 #contact .contact_messege_wrap .contact_cocktail_img.fadeRight {

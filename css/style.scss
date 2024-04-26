@@ -758,14 +758,26 @@ header {
     .contact_messege_wrap {
         position: relative;
 
+        a:hover {
+            transform: none;
+        }
+
         .contact_cocktail_img {
-            width: 16%;
+            height: 220px;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
 
             @media(max-width: 767px) {
-                width: 25%;
+                height: 120px;
+            }
+        }
+
+        .contact_cocktail_img.large {
+            height: 250px;
+
+            @media(max-width: 767px) {
+                height: 150px;
             }
         }
 
