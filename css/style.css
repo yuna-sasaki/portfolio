@@ -167,6 +167,11 @@ img {
     padding: 40px 20px;
   }
 }
+#cocktail_menu small {
+  font-size: 0.8em;
+  margin-top: 1rem;
+  display: block;
+}
 #cocktail_menu img {
   box-shadow: none;
 }
